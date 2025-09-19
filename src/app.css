@@ -1,0 +1,127 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: url("assets/Stars-1.jpg");
+    background-size: cover;
+    /* background: url("assets/Stars-2.jpg"); */
+    color: white;
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 3/5;
+    align-items: center;
+    border-radius: 2em;
+    /* justify-content: center; */
+
+    button{
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        &::after{
+            content: "⟲";
+            /* size: 2em; */
+            transform: scale(3);
+            margin-right: .3em;
+            margin-bottom: .3em;
+            display: inline-block;
+        }
+    }
+
+    a{
+        margin-bottom: .5em;
+        background-color: red;
+        padding: .3em 2em;
+        /* border-radius: .5em; */
+        margin-top: 1em;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        /* border: 2px double black; */
+
+        &::after{
+            content: " >";
+        }
+    }
+}
+
+.my-info{
+    /* position: fixed; */
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    /* margin-right: clamp(7em, 15%, 10em); */
+    margin-right: 9em;
+    margin-top: 1em;
+    font-size: clamp(.5rem, 3vw , 1rem);
+    /* font-size: 3vw; */
+
+    h2{
+        /* position: fixed; */
+        z-index: 2;
+        margin: 0;
+        background-color: white;
+        color: black;
+        border: 4px double black;
+        padding-inline: 1em;
+        margin-top: -4px;
+        margin-left: .7em;
+        /* font-size: clamp(.6rem, 4vw , 1.4rem); */
+
+    }
+
+    p{
+        /* font-size: clamp(.3rem, 2vw , .7rem); */
+        margin: 0;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        padding-inline: .5em;
+        width: max-content;
+        z-index: 3;
+    }
+}
+
+.avatar {
+    /* position: absolute; */
+    /* position: fixed; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-mask-image: url('/assets/shapejjk.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center; 
+    mask-image: url('/assets/shapejjk.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover; 
+    mask-position: center;
+  }
+
+  .my-story{
+    font-family: sans-serif;
+    max-width: 80%;
+    background-color: black;
+    margin-top: -7.6em;
+    padding: 1em;
+    z-index: 4;
+
+    h3{
+        font-size: clamp(.8em, 3vw, 1em);
+    }
+
+    p{
+        font-size: clamp(.8em, 3vw, 1em);
+    }
+  }
+
