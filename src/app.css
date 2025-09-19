@@ -8,7 +8,7 @@ main{
 .card{
     display: flex;
     flex-direction: column;
-    background: url("assets/Stars-1.jpg");
+    background: url("/assets/Stars-1.jpg");
     background-size: cover;
     /* background: url("assets/Stars-2.jpg"); */
     color: white;
