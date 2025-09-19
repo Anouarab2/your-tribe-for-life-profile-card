@@ -2,6 +2,19 @@
     let { data } = $props(); 
     const person = data.person;
     import { onMount } from "svelte";
+
+    onMount(() => {
+        let spinButton = document.querySelector('button');
+        let cardSpin = document.querySelector('.card');
+
+        if (spinButton && cardSpin) {
+            spinButton.addEventListener('click', spinCard);
+        }
+
+        function spinCard() {
+            cardSpin.classList.toggle('spin');
+        }
+    });
 </script>
 
 <main>
